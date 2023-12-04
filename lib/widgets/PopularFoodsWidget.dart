@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/animation/RotationRoute.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/FoodDetailsPage.dart';
 
@@ -35,13 +34,13 @@ class PopularFoodTiles extends StatelessWidget {
   String slug;
 
   PopularFoodTiles(
-      {Key key,
-      @required this.name,
-      @required this.imageUrl,
-      @required this.rating,
-      @required this.numberOfRating,
-      @required this.price,
-      @required this.slug})
+      {required key,
+      required this.name,
+      required this.imageUrl,
+      required this.rating,
+      required this.numberOfRating,
+      required this.price,
+      required this.slug})
       : super(key: key);
 
   @override
@@ -53,7 +52,7 @@ class PopularFoodTiles extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.only(left: 10, right: 5, top: 5, bottom: 5),
+            padding: EdgeInsets.only(left: 10, right: 5, top: 2, bottom: 2),
             decoration: BoxDecoration(boxShadow: [
               /* BoxShadow(
                 color: Color(0xFFfae3e2),
@@ -71,7 +70,7 @@ class PopularFoodTiles extends StatelessWidget {
                 ),
                 child: Container(
                   width: 170,
-                  height: 210,
+                  height: 205,
                   child: Column(
                     children: <Widget>[
                       Stack(
@@ -265,6 +264,7 @@ class PopularFoodItems extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: <Widget>[
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Fried Egg",
             imageUrl: "ic_popular_food_1",
             rating: '4.9',
@@ -272,6 +272,7 @@ class PopularFoodItems extends StatelessWidget {
             price: '15.06',
             slug: "fried_egg"),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Mixed Vegetable",
             imageUrl: "ic_popular_food_3",
             rating: "4.9",
@@ -279,6 +280,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "17.03",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Salad With Chicken",
             imageUrl: "ic_popular_food_4",
             rating: "4.0",
@@ -286,6 +288,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "11.00",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Mixed Salad",
             imageUrl: "ic_popular_food_5",
             rating: "4.00",
@@ -293,6 +296,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "11.10",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Red meat,Salad",
             imageUrl: "ic_popular_food_2",
             rating: "4.6",
@@ -300,6 +304,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "12.00",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Mixed Salad",
             imageUrl: "ic_popular_food_5",
             rating: "4.00",
@@ -307,6 +312,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "11.10",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Potato,Meat fry",
             imageUrl: "ic_popular_food_6",
             rating: "4.2",
@@ -314,6 +320,7 @@ class PopularFoodItems extends StatelessWidget {
             price: "23.0",
             slug: ""),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Fried Egg",
             imageUrl: "ic_popular_food_1",
             rating: '4.9',
@@ -321,6 +328,7 @@ class PopularFoodItems extends StatelessWidget {
             price: '15.06',
             slug: "fried_egg"),
         PopularFoodTiles(
+            key: Key('Key'),
             name: "Red meat,Salad",
             imageUrl: "ic_popular_food_2",
             rating: "4.6",
@@ -331,5 +339,3 @@ class PopularFoodItems extends StatelessWidget {
     );
   }
 }
-
-

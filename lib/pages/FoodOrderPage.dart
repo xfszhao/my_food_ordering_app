@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 
 class FoodOrderPage extends StatefulWidget {
   @override
@@ -32,7 +32,8 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
               textAlign: TextAlign.center,
             ),
           ),
-          brightness: Brightness.light,
+          systemOverlayStyle:
+              SystemUiOverlayStyle(statusBarBrightness: Brightness.light),
           actions: <Widget>[
             CartIconWithBadge(),
           ],
@@ -58,6 +59,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   height: 10,
                 ),
                 CartItem(
+                    key: Key('Grilled Salmon Key'),
                     productName: "Grilled Salmon",
                     productPrice: "\$96.00",
                     productImage: "ic_popular_food_1",
@@ -66,6 +68,7 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   height: 10,
                 ),
                 CartItem(
+                    key: Key('Meat vegetable Key'),
                     productName: "Meat vegetable",
                     productPrice: "\$65.08",
                     productImage: "ic_popular_food_4",
@@ -309,11 +312,11 @@ class CartItem extends StatelessWidget {
   String productCartQuantity;
 
   CartItem({
-    Key key,
-    @required this.productName,
-    @required this.productPrice,
-    @required this.productImage,
-    @required this.productCartQuantity,
+    required key,
+    required this.productName,
+    required this.productPrice,
+    required this.productImage,
+    required this.productCartQuantity,
   }) : super(key: key);
 
   @override

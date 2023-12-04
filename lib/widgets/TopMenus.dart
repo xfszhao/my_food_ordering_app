@@ -13,14 +13,28 @@ class _TopMenusState extends State<TopMenus> {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          TopMenuTiles(name: "Burger", imageUrl: "ic_burger", slug: ""),
-          TopMenuTiles(name: "Sushi", imageUrl: "ic_sushi", slug: ""),
-          TopMenuTiles(name: "Pizza", imageUrl: "ic_pizza", slug: ""),
-          TopMenuTiles(name: "Cake", imageUrl: "ic_cake", slug: ""),
-          TopMenuTiles(name: "Ice Cream", imageUrl: "ic_ice_cream", slug: ""),
-          TopMenuTiles(name: "Soft Drink", imageUrl: "ic_soft_drink", slug: ""),
-          TopMenuTiles(name: "Burger", imageUrl: "ic_burger", slug: ""),
-          TopMenuTiles(name: "Sushi", imageUrl: "ic_sushi", slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Burger", imageUrl: "ic_burger", slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Sushi", imageUrl: "ic_sushi", slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Pizza", imageUrl: "ic_pizza", slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Cake", imageUrl: "ic_cake", slug: ""),
+          TopMenuTiles(
+              key: Key('key'),
+              name: "Ice Cream",
+              imageUrl: "ic_ice_cream",
+              slug: ""),
+          TopMenuTiles(
+              key: Key('key'),
+              name: "Soft Drink",
+              imageUrl: "ic_soft_drink",
+              slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Burger", imageUrl: "ic_burger", slug: ""),
+          TopMenuTiles(
+              key: Key('key'), name: "Sushi", imageUrl: "ic_sushi", slug: ""),
         ],
       ),
     );
@@ -33,10 +47,10 @@ class TopMenuTiles extends StatelessWidget {
   String slug;
 
   TopMenuTiles(
-      {Key key,
-      @required this.name,
-      @required this.imageUrl,
-      @required this.slug})
+      {required key,
+      required this.name,
+      required this.imageUrl,
+      required this.slug})
       : super(key: key);
 
   @override
