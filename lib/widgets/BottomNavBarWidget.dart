@@ -21,19 +21,23 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget> {
       type: BottomNavigationBarType.fixed,
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
+          icon: Icon(Icons.restaurant),
+          label: 'Food',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.near_me),
-          label: 'Near By',
+          icon: Icon(Icons.table_restaurant),
+          label: 'Table',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.card_giftcard),
+          icon: Icon(Icons.people),
+          label: 'Friends',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.shopping_basket),
           label: 'Cart',
         ),
         BottomNavigationBarItem(
-          icon: Icon(FontAwesomeIcons.user),
+          icon: Icon(Icons.person),
           label: 'Account',
         ),
       ],
