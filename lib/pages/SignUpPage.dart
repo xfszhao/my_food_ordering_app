@@ -12,26 +12,26 @@ class SignUpPage extends StatelessWidget {
 
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 35, bottom: 30),
+        padding: EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
         width: double.infinity,
         height: double.infinity,
         color: Colors.white70,
         child: Column(
           children: <Widget>[
-            Flexible(
-              flex: 1,
-              child: InkWell(
-                child: Container(
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: Icon(Icons.close),
-                  ),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ),
+            // Flexible(
+            //   flex: 1,
+            //   child: InkWell(
+            //     child: Container(
+            //       child: Align(
+            //         alignment: Alignment.topLeft,
+            //         child: Icon(Icons.close),
+            //       ),
+            //     ),
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //     },
+            //   ),
+            // ),
             Flexible(
               flex: 15,
               child: Column(
@@ -39,10 +39,11 @@ class SignUpPage extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     width: 230,
-                    height: 100,
+                    height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_food_express.png",
+                      "assets/images/menus/ic_seeteer_logo.png",
+                      //"assets/images/menus/ic_food_express.png",
                     ),
                   ),
                   SizedBox(

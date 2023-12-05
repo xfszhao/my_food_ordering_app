@@ -36,7 +36,8 @@ class _HomePageState extends State<HomePage> {
                 color: Color(0xFF3a3737),
               ),
               onPressed: () {
-                Navigator.push(context, ScaleRoute(page: SignInPage()));
+                Navigator.pushReplacement(
+                    context, ScaleRoute(page: SignInPage()));
               })
         ],
       ),

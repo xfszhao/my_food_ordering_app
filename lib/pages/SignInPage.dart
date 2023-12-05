@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
+import 'package:flutter_app/pages/HomePage.dart';
 import 'package:flutter_app/pages/SignUpPage.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -17,37 +18,49 @@ class _SignInPageState extends State<SignInPage> {
 
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 35, bottom: 30),
+        padding: EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
         width: double.infinity,
         height: double.infinity,
         color: Colors.white70,
         child: Column(
           children: <Widget>[
+            // Flexible(
+            //   flex: 1,
+            //   child: InkWell(
+            //     child: Container(
+            //       child: Align(
+            //         alignment: Alignment.topLeft,
+            //         child: Icon(Icons.close),
+            //       ),
+            //     ),
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //     },
+            //   ),
+            // ),
             Flexible(
-              flex: 1,
-              child: InkWell(
-                child: Container(
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: Icon(Icons.close),
-                  ),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
-              ),
-            ),
-            Flexible(
-              flex: 8,
+              flex: 12,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                // mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 5.0),
+                  //   child: Image(
+                  //       // height:
+                  //       //     MediaQuery.of(context).size.height > 800 ? 291.0 : 250,
+                  //       fit: BoxFit.fill,
+                  //       image: const AssetImage(
+                  //           'assets/images/menus/ic_seeteer_logo.png')),
+                  //   //image: const AssetImage('assets/img/login_logo.png')),
+                  // ),
                   Container(
                     width: 230,
-                    height: 100,
+                    height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_food_express.png",
+                      "assets/images/menus/ic_seeteer_logo.png",
+                      //"assets/images/menus/ic_food_express.png",
                     ),
                   ),
                   SizedBox(
@@ -220,7 +233,9 @@ class SignInButtonWidget extends StatelessWidget {
                   fontFamily: "WorkSansBold"),
             ),
           ),
-          onPressed: () => {}),
+          onPressed: () => {
+                Navigator.pushReplacement(context, ScaleRoute(page: HomePage()))
+              }),
     );
   }
 }
