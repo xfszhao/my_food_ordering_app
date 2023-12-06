@@ -9,9 +9,9 @@ class _TopMenusState extends State<TopMenus> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      width: 100,
       child: ListView(
-        scrollDirection: Axis.horizontal,
+        scrollDirection: Axis.vertical,
         children: <Widget>[
           TopMenuTiles(
               key: Key('key'), name: "Burger", imageUrl: "ic_burger", slug: ""),
