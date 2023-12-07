@@ -42,7 +42,7 @@ class SignUpPage extends StatelessWidget {
                     height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_seeteer_logo.png",
+                      "assets/images/menus/ic_seeter_logo.jpg",
                       //"assets/images/menus/ic_food_express.png",
                     ),
                   ),

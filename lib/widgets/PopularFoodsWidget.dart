@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
 import 'package:flutter_app/pages/FoodDetailsPage.dart';
-import 'package:flutter_app/widgets/TopMenus.dart';
+import 'package:flutter_app/widgets/SideMenus.dart';
 
 class PopularFoodsWidget extends StatefulWidget {
   @override
@@ -29,16 +29,20 @@ class _PopularFoodsWidgetState extends State<PopularFoodsWidget> {
                   stops: <double>[0.0, 1.0],
                   tileMode: TileMode.clamp),
             ),
-            width: 200.0,
+            width: 300.0,
             height: 2.0,
           ),
-          //Row(children: <Widget>[
-          //TopMenus(),
-          Flexible(
-            flex: 2,
-            child: PopularFoodItems(),
+          Container(
+            height: 700,
+            width: double.infinity,
+            child: Row(children: <Widget>[
+              SideMenus(),
+              Flexible(
+                flex: 2,
+                child: PopularFoodItems(),
+              ),
+            ]),
           )
-          //]),
         ],
       ),
     );

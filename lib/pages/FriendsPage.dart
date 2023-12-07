@@ -6,7 +6,7 @@ import 'package:flutter_app/widgets/BestFoodWidget.dart';
 import 'package:flutter_app/widgets/BottomNavBarWidget.dart';
 import 'package:flutter_app/widgets/PopularFoodsWidget.dart';
 import 'package:flutter_app/widgets/SearchWidget.dart';
-import 'package:flutter_app/widgets/TopMenus.dart';
+import 'package:flutter_app/widgets/SideMenus.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             SearchWidget(),
-            TopMenus(),
+            SideMenus(),
             PopularFoodsWidget(),
             BestFoodWidget(),
           ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/pages/HomePage.dart';
+import 'package:flutter_app/pages/FoodPage.dart';
 import 'package:flutter_app/pages/SignInPage.dart';
 
 // void main() => runApp(MaterialApp(

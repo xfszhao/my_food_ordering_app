@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/animation/ScaleRoute.dart';
-import 'package:flutter_app/pages/HomePage.dart';
+import 'package:flutter_app/pages/FoodPage.dart';
 import 'package:flutter_app/pages/SignUpPage.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -39,7 +39,7 @@ class _SignInPageState extends State<SignInPage> {
             //   ),
             // ),
             Flexible(
-              flex: 12,
+              flex: 6,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 // mainAxisSize: MainAxisSize.max,
@@ -55,11 +55,11 @@ class _SignInPageState extends State<SignInPage> {
                   //   //image: const AssetImage('assets/img/login_logo.png')),
                   // ),
                   Container(
-                    width: 230,
+                    width: 270,
                     height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_seeteer_logo.png",
+                      "assets/images/menus/ic_seeter_logo.jpg",
                       //"assets/images/menus/ic_food_express.png",
                     ),
                   ),
@@ -234,7 +234,7 @@ class SignInButtonWidget extends StatelessWidget {
             ),
           ),
           onPressed: () => {
-                Navigator.pushReplacement(context, ScaleRoute(page: HomePage()))
+                Navigator.pushReplacement(context, ScaleRoute(page: FoodPage()))
               }),
     );
   }
