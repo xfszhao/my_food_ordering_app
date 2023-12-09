@@ -18,20 +18,20 @@ class SignUpPage extends StatelessWidget {
         color: Colors.white70,
         child: Column(
           children: <Widget>[
-            // Flexible(
-            //   flex: 1,
-            //   child: InkWell(
-            //     child: Container(
-            //       child: Align(
-            //         alignment: Alignment.topLeft,
-            //         child: Icon(Icons.close),
-            //       ),
-            //     ),
-            //     onTap: () {
-            //       Navigator.pop(context);
-            //     },
-            //   ),
-            // ),
+            Flexible(
+              flex: 1,
+              child: InkWell(
+                child: Container(
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Icon(Icons.close),
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ),
             Flexible(
               flex: 15,
               child: Column(
@@ -42,7 +42,8 @@ class SignUpPage extends StatelessWidget {
                     height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_seeter_logo.jpg",
+                      "assets/images/menus/ic_seeter_logo_leo.jpg",
+                      //"assets/images/menus/ic_seeter_logo_1.jpg",
                       //"assets/images/menus/ic_food_express.png",
                     ),
                   ),

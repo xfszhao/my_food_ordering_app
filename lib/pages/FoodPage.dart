@@ -51,7 +51,9 @@ class _FoodPageState extends State<FoodPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBarWidget(),
+      bottomNavigationBar: BottomNavBarWidget(
+        title: 'Title',
+      ),
     );
   }
 }

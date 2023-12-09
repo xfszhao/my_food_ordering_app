@@ -39,7 +39,7 @@ class _SignInPageState extends State<SignInPage> {
             //   ),
             // ),
             Flexible(
-              flex: 6,
+              flex: 7,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 // mainAxisSize: MainAxisSize.max,
@@ -59,7 +59,8 @@ class _SignInPageState extends State<SignInPage> {
                     height: 230,
                     alignment: Alignment.center,
                     child: Image.asset(
-                      "assets/images/menus/ic_seeter_logo.jpg",
+                      "assets/images/menus/ic_seeter_logo_leo.jpg",
+                      //"assets/images/menus/ic_seeter_logo_1.jpg",
                       //"assets/images/menus/ic_food_express.png",
                     ),
                   ),
@@ -153,7 +154,7 @@ class _SignInPageState extends State<SignInPage> {
             Flexible(
               flex: 1,
               child: Align(
-                alignment: Alignment.bottomCenter,
+                alignment: Alignment.topCenter,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,

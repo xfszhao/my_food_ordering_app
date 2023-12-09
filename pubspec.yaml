@@ -19,6 +19,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  settings_ui: 
+    path: C:/Users/xianf/flutter_projects/flutter-settings-ui
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -61,6 +63,8 @@ flutter:
     - assets/images/menus/ic_app_icon.png
     - assets/images/menus/ic_food_express.png    
     - assets/images/menus/ic_seeter_logo.jpg
+    - assets/images/menus/ic_seeter_logo_1.jpg
+    - assets/images/menus/ic_seeter_logo_leo.jpg
     - assets/images/menus/ic_app_icon_black.png
     - assets/images/topmenu/ic_burger.png
     - assets/images/topmenu/ic_cake.png

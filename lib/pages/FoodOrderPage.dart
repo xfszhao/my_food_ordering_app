@@ -49,14 +49,14 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                   child: Text(
                     "Your Food Cart",
                     style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         color: Color(0xFF3a3a3b),
                         fontWeight: FontWeight.w600),
                     textAlign: TextAlign.left,
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 CartItem(
                     key: Key('Grilled Salmon Key'),
@@ -65,31 +65,31 @@ class _FoodOrderPageState extends State<FoodOrderPage> {
                     productImage: "ic_popular_food_1",
                     productCartQuantity: "2"),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 CartItem(
                     key: Key('Meat vegetable Key'),
-                    productName: "Meat vegetable",
+                    productName: "Meat Vegetable",
                     productPrice: "\$65.08",
                     productImage: "ic_popular_food_4",
                     productCartQuantity: "5"),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 PromoCodeWidget(),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 TotalCalculationWidget(),
                 SizedBox(
-                  height: 10,
+                  height: 8,
                 ),
                 Container(
                   padding: EdgeInsets.only(left: 5),
                   child: Text(
                     "Payment Method",
                     style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 18,
                         color: Color(0xFF3a3a3b),
                         fontWeight: FontWeight.w600),
                     textAlign: TextAlign.left,
@@ -164,7 +164,7 @@ class TotalCalculationWidget extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       width: double.infinity,
-      height: 150,
+      height: 155,
       decoration: BoxDecoration(boxShadow: [
         BoxShadow(
           color: Color(0xFFfae3e2).withOpacity(0.1),
@@ -249,7 +249,7 @@ class TotalCalculationWidget extends StatelessWidget {
                     textAlign: TextAlign.left,
                   ),
                   Text(
-                    "\$292",
+                    "\$294",
                     style: TextStyle(
                         fontSize: 18,
                         color: Color(0xFF3a3a3b),
@@ -323,7 +323,7 @@ class CartItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 130,
+      height: 135,
       decoration: BoxDecoration(boxShadow: [
         BoxShadow(
           color: Color(0xFFfae3e2).withOpacity(0.3),
@@ -342,7 +342,7 @@ class CartItem extends StatelessWidget {
           ),
           child: Container(
             alignment: Alignment.center,
-            padding: EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 10),
+            padding: EdgeInsets.only(left: 5, right: 5, top: 8, bottom: 8),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[

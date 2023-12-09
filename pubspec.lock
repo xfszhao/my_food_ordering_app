@@ -115,6 +115,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  settings_ui:
+    dependency: "direct main"
+    description:
+      path: "C:\\Users\\xianf\\flutter_projects\\flutter-settings-ui"
+      relative: false
+    source: path
+    version: "2.0.3"
   sky_engine:
     dependency: transitive
     description: flutter
